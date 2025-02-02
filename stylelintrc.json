@@ -7,8 +7,10 @@
     "block-no-empty": true,
     "color-no-invalid-hex": true,
     "declaration-block-trailing-semicolon": "always",
-    "selector-pseudo-element-colon-notation": "double",
+    "selector-pseudo-element-colon-notation": "single",
     "no-duplicate-selectors": true,
-    "max-empty-lines": 1
+    "max-empty-lines": 1,
+    "property-no-unknown": true,
+    "unit-no-unknown": true
   }
 }
