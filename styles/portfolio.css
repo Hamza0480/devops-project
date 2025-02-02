@@ -1,0 +1,60 @@
+/* styles/portfolio.css */
+body {
+    font-family: 'Tahoma', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .portfolio {
+    padding: 2rem;
+  }
+  
+  .portfolio .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .project {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33% - 2rem);
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  

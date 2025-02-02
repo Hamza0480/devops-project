@@ -1,0 +1,51 @@
+/* styles/blog.css */
+body {
+    font-family: 'Georgia', serif;
+    background: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #8e44ad;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .blog {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  
+  .blog article {
+    background: #f2e5ff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+  }
+  
+  .blog article h2 {
+    margin-top: 0;
+  }
+  
+  footer {
+    background: #8e44ad;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
