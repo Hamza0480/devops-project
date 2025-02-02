@@ -1,9 +1,9 @@
-/* styles/index.css */
+/* styles/home.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #eaf4ff;
     color: #333;
   }
   
@@ -24,20 +24,11 @@ body {
     text-decoration: underline;
   }
   
- 
-  
-  .cta {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #007BFF;
+  .hero {
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    padding: 4rem;
+    text-align: center;
     color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    margin-top: 1rem;
-  }
-  
-  .cta:hover {
-    background: #0056b3;
   }
   
   footer {

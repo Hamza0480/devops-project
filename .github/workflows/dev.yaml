@@ -20,10 +20,10 @@ jobs:
         run: npm install
 
       - name: Run HTML Lint
-        run: npx htmlhint .  # Assumes you have an htmlhint configuration file
+        run: npx htmlhint pages/  # Lints all HTML files in the pages directory
 
       - name: Run CSS Lint
-        run: npx stylelint "**/*.css"  # Assumes you have stylelint configuration
+        run: npx stylelint "styles/**/*.css"  # Lints all CSS files in the styles directory
 
       - name: Build Project
         run: echo "Building project..."
