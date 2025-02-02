@@ -14,19 +14,22 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18'  # Upgraded to avoid compatibility issues
 
       - name: Install Dependencies
         run: npm install
 
+      - name: Verify HTMLHint Installation
+        run: npx htmlhint --version  # Debugging step to check if htmlhint is installed properly
+
       - name: Run HTML Lint
-        run: npx htmlhint pages/  # Lints all HTML files in the pages directory
+        run: npx htmlhint "pages/**/*.html"  # Corrected path to ensure all HTML files are checked
+
+      - name: Verify Stylelint Installation
+        run: npx stylelint --version  # Debugging step to check if stylelint is installed properly
 
       - name: Run CSS Lint
-        run: npx stylelint "styles/**/*.css"  # Lints all CSS files in the styles directory
+        run: npx stylelint "styles/**/*.css" --allow-empty-input  # Avoids errors if no CSS files exist yet
 
       - name: Build Project
         run: echo "Building project..."
-        
-       
-
