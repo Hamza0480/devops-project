@@ -1,0 +1,29 @@
+name: Development CI
+
+on:
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run HTML Lint
+        run: npx htmlhint .  # Assumes you have an htmlhint configuration file
+
+      - name: Run CSS Lint
+        run: npx stylelint "**/*.css"  # Assumes you have stylelint configuration
+
+      - name: Build Project
+        run: echo "Building project..."
